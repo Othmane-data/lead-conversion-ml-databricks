@@ -1,0 +1,2 @@
+model,accuracy,precision,recall,f1,roc_auc,pr_auc,tp,fp,fn,tn
+Logistic Regression,0.684,0.484,0.652,0.556,0.704,0.501,15,16,8,37
