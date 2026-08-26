@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Secrets / local config
+.env
+.env.*
+secrets/
+private/
+
+# Never publish source prospect data
+data/*.csv
+data/*.xlsx
+data/*.xls
+data/*.parquet
+data/*.json
+data/*.zip
+
+# Never publish row-level scoring exports
+*lead_scores*
+*scores_leads*
+*scored_leads*
+*ranking_leads*
+*prospects_export*
+
+# Local OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
