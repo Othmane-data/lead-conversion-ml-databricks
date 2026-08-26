@@ -1,0 +1,5 @@
+partition,leads,conversions,conversion_rate_pct,share_pct
+train,230,77,33.48,60.1
+validation,77,22,28.57,20.1
+test,76,23,30.26,19.8
+total,383,122,31.85,100.0
