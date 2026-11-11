@@ -1,0 +1,9 @@
+-- Example measures for Power BI: name the imported demo table Finance
+Total Revenue = SUM(Finance[revenue])
+Total Expenses = SUM(Finance[expenses])
+Operating Profit = [Total Revenue] - [Total Expenses]
+Profit Margin % = DIVIDE([Operating Profit], [Total Revenue])
+Cost to Income % = DIVIDE([Total Expenses], [Total Revenue])
+Previous Month Revenue = CALCULATE([Total Revenue], DATEADD('Calendar'[Date], -1, MONTH))
+Revenue Growth MoM % = DIVIDE([Total Revenue] - [Previous Month Revenue], [Previous Month Revenue])
+-- DATEADD requires a contiguous Date dimension related to Finance[month].

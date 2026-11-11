@@ -1,0 +1,9 @@
+-- Example Power BI measures; imported table named Sales
+Total Sales = SUM(Sales[revenue])
+Total Orders = SUM(Sales[orders])
+Total Visits = SUM(Sales[visits])
+Conversion Rate % = DIVIDE([Total Orders], [Total Visits])
+Average Order Value = DIVIDE([Total Sales], [Total Orders])
+Previous Month Sales = CALCULATE([Total Sales], DATEADD('Calendar'[Date], -1, MONTH))
+Sales Growth MoM % = DIVIDE([Total Sales] - [Previous Month Sales], [Previous Month Sales])
+-- Relate Calendar[Date] to Sales[month] before time intelligence.
