@@ -1,13 +1,13 @@
-# 04 — Automated Data Quality & ETL: Python + SQL
+# Data Cleaning & ETL Automation | Python + SQL
 
-![ETL portfolio visual](../assets/etl.svg)
+![ETL workflow](../assets/etl.svg)
 
-**Problem:** Source extracts can contain duplicate transaction IDs, inconsistent statuses, padded identifiers, missing amounts and negatives. These defects can distort reports.
+**Problem:** Duplicate transaction identifiers, missing and negative amounts, and inconsistent text values can distort recurring reports.
 
-**Approach:** Ingest CSV → normalize text → enforce deduplication → validate non-null and nonnegative amounts → export normalized records to CSV and SQLite → query counts and totals.
+**Solution:** Read source records, standardize text and status fields, deduplicate by transaction ID, exclude invalid amounts, export clean CSV and a SQL database, then run validation queries.
 
-**Reproduce:** [Python pipeline](../src/etl_demo.py) and [SQL validation](quality_checks.sql).
+**Data quality results:** 724 sample input records → 674 validated outputs; 24 duplicates, 10 missing amounts and 16 negatives identified.
 
-**What a client receives in such a scoped engagement:** A written mapping of input fields, transformations, rejected records, checks, reproducible output and a handover guide.
+**Deliverables:** [Python ETL pipeline](../src/etl_demo.py), [SQL quality rules](quality_checks.sql), [quality-check summary](../data/etl_quality_summary.csv).
 
-**Transparency:** The example contains fictional transaction records. It does not claim an actual production automation or time savings from a client project. Scheduling, APIs, cloud storage and credentials are out of scope.
+**Tech keywords:** Python · SQL · ETL · Data Cleaning · Data Validation · Reporting Automation.

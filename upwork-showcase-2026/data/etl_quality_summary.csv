@@ -1,0 +1,6 @@
+check,count
+Input rows,724
+Duplicate transaction IDs,24
+Missing amounts,10
+Negative amounts,16
+Output clean rows,674

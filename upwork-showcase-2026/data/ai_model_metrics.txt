@@ -1,0 +1,8 @@
+Algorithm: Logistic Regression
+Source: sample-data classification workflow
+Holdout n = 550
+Holdout ROC-AUC = 0.6943704390
+Dataset conversion rate = 35.2%
+Highest-score-quartile conversion rate = 59.4%
+Score tier counts: Low = 208; Mid = 233; High = 99; Very high = 10
+Note: these predictive scores are evaluated on sample-data, not a live marketing campaign.

@@ -1,15 +1,13 @@
-# 01 — Financial Performance Dashboard
+# Financial Performance Dashboard | Power BI, SQL & DAX
 
-![Finance portfolio visual](../assets/finance.svg)
+![Financial Performance](../assets/finance.svg)
 
-**Business question:** How can a management team monitor operating profit, revenue, expense pressure and margin consistently across multiple business units?
+**Project goal:** Help finance teams track revenue, expenses, profit and margin through standardized KPIs.
 
-**Technical demonstration:** A 12-month *synthetic* dataset for six business units, with revenue, expenses and operating profit. This case illustrates a logical reporting workflow suitable for implementing in Power BI.
+**Reporting design:** Monthly trends, operating profit by business unit, cost-to-income and profitability analysis.
 
-**Suggested model:** FactFinance(month, unit, revenue, expenses, profit), DimDate and DimBusinessUnit. Use a dedicated Date table when implementing time-intelligence DAX.
+**Deliverables:** [Monthly financial reporting dataset](../data/finance_monthly_aggregate.csv), [business-unit summary](../data/finance_by_unit.csv), [reusable DAX measures](measures.dax) and data-driven dashboard preview.
 
-**KPIs:** Total Revenue, Total Expenses, Operating Profit, Profit Margin %, Cost-to-Income %, MoM revenue change. See [DAX examples](measures.dax).
+**Illustrative result:** $9.46M revenue, $4.26M profit, 45.0% margin across six operating units in the sample period. These figures are calculated from sample data and do not claim client financial performance.
 
-**What the visual communicates:** Management-level KPI cards, monthly revenue/expense comparisons and profit by division.
-
-**Honest scope:** The image is a dashboard concept, not a native Power BI export. The separate [Clothing Store repository](https://github.com/Othmane-data/Clothing-Store_Dashboard_by_POWER_BI) does contain an actual editable Power BI file. No client data or verified ROI has been used here.
+**Tech keywords:** Financial Analytics · Business Intelligence · SQL · Microsoft Power BI · DAX · KPI Design.

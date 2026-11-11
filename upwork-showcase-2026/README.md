@@ -1,34 +1,28 @@
-# Data, BI & AI — Upwork Portfolio Showcase (2026)
+# BI, Data Analytics & AI — Upwork Portfolio
 
-Four **demonstration case studies using synthetic data**, built to illustrate practical delivery in business intelligence, analytics, machine learning and data automation.
+A curated set of **four data-driven portfolio case studies** with technical evidence, reporting definitions, reproducible code and downloadable project assets.
 
-> **Transparency:** These are self-directed demonstrations, not paid client work. Illustrations are *not* screenshots from Power BI Desktop. No confidential datasets or invented client ROI are used.
-
-| Case | Preview | What it demonstrates | Evidence |
+| Area | Project | Preview | Data & technical assets |
 |---|---|---|---|
-| [01 — Financial Performance](finance/README.md) | ![Finance](assets/finance.svg) | Revenue, margin, cost-to-income, KPI design and DAX | [DAX](finance/measures.dax) |
-| [02 — Sales & Conversion](sales/README.md) | ![Sales](assets/sales.svg) | Revenue, AOV, conversion and channel comparisons | [DAX](sales/measures.dax) |
-| [03 — AI Lead Scoring](ai/README.md) | ![AI](assets/ai.svg) | Scikit-learn classification and holdout validation | [Demo Python](src/ai_demo.py) |
-| [04 — Data Quality & ETL](etl/README.md) | ![ETL](assets/etl.svg) | Deduplication, validation and SQLite reporting | [Demo Python](src/etl_demo.py) |
+| Financial Intelligence | [Financial Performance Dashboard](finance/README.md) | ![Finance](assets/finance.svg) | [Monthly KPIs](data/finance_monthly_aggregate.csv), [DAX](finance/measures.dax) |
+| Sales Analytics | [Sales & Conversion](sales/README.md) | ![Sales](assets/sales.svg) | [Sales data](data/sales_monthly_aggregate.csv), [DAX](sales/measures.dax) |
+| Applied Machine Learning | [AI Lead Scoring](ai/README.md) | ![Lead scoring](assets/ai.svg) | [ML workflow](src/ai_demo.py), [model metrics](data/ai_model_metrics.txt) |
+| Data Engineering | [Data Quality & ETL](etl/README.md) | ![ETL](assets/etl.svg) | [ETL pipeline](src/etl_demo.py), [SQL checks](etl/quality_checks.sql) |
 
-## Existing projects in this GitHub account
+## Business value
 
-- **Actual Power BI file:** [Clothing Store Power BI dashboard (.pbix)](https://github.com/Othmane-data/Clothing-Store_Dashboard_by_POWER_BI)
-- **Extensive real project documentation:** [Lead conversion machine learning on Databricks](https://github.com/Othmane-data/lead-conversion-ml-databricks/tree/main)
-- **Big Data demonstration:** [Telco churn on PySpark/Databricks](https://github.com/Othmane-data/telco-churn-pyspark-databricks)
+- **Finance:** Support margin monitoring, expense management and performance reporting across business units.
+- **Sales:** Unify revenue, conversions, average order values and regional performance.
+- **AI:** Prioritize prospects with a validated, interpretable conversion scoring approach.
+- **Automation:** Clean operational datasets and export validated information to SQL/CSV for reporting.
 
-## Reproduce the Python examples
+## Reproducibility and data provenance
 
-~~~bash
-pip install -r requirements.txt
-python src/ai_demo.py
-python src/etl_demo.py
-~~~
+All datasets in this showcase are **illustrative sample data**, and the visual reporting assets are based on calculated values. These are independent portfolio case studies. The source scripts demonstrate the underlying workflows; model results are evaluation metrics on sample data rather than live deployment outcomes. Visuals are SVG/PNG reporting previews, and **not screenshots of Power BI Desktop**.
 
-Both examples create synthetic records with fixed seeds, print quality/model metrics and require no customer data. For a more elaborate bundle of PNG dashboard previews, CSV data, DAX and scripts, use the ZIP package generated in the ChatGPT conversation. This branch houses the GitHub-readable case studies and reproducible code examples.
+Additional, separately documented work:
+- [Editable Power BI (.pbix) report](https://github.com/Othmane-data/Clothing-Store_Dashboard_by_POWER_BI)
+- [Lead conversion ML project](https://github.com/Othmane-data/lead-conversion-ml-databricks/tree/main)
+- [PySpark Databricks churn project](https://github.com/Othmane-data/telco-churn-pyspark-databricks)
 
-## Upwork-ready copy
-
-See [portfolio entries](upwork/PORTFOLIO_ITEMS.md) and [Project Catalog packages](upwork/PROJECT_CATALOG.md). Titles, descriptions and tags are tailored for an English-speaking audience.
-
-**Privacy & professional integrity:** No client names, logos, confidential exports or unsubstantiated real-world performance improvements.
+[Upwork portfolio text](upwork/PORTFOLIO_ITEMS.md) · [Project Catalog offers](upwork/PROJECT_CATALOG.md)
